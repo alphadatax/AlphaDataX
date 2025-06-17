@@ -1,0 +1,161 @@
+.outer-bg{
+  position: relative;
+
+  color: white;
+  overflow: hidden;
+  width: 100%;
+}
+.glow {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.592) 0%, rgba(0, 255, 255, 0) 70%);
+    filter: blur(60px);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: -1;
+  }
+.why-container {
+    color: #fff;
+    padding: 100px;
+  }
+  .x-icon {
+    width: 60px;
+    float: left;
+  }
+  .title-div{
+  width: 100%;
+}
+  
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 3vw;
+    text-align: left;
+  }
+  
+  .subtitle {
+    opacity: 0.9;
+    margin-bottom: 24px;
+    color: white;
+    text-align: left;
+  }
+  
+  .feature-chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .feature-chip {
+    background-color: #2A2A2A !important;
+    color: white !important;
+    font-size: 0.75rem;
+    border-radius: 16px !important;
+    padding: 8px 12px !important;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 10px !important;
+  }
+  
+  .red-dot::before,
+  .black-dot::before {
+    content: "●";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+  }
+  
+  .red-dot::before {
+    color: red;
+  }
+  
+  .black-dot::before {
+    color: #666;
+  }
+  
+  .info-card {
+    padding: 24px;
+    border-radius: 20px !important;
+    background-color: #111 !important;
+    color: white;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  
+  .card-number {
+    border: 1px solid #FF5A3D;
+    color: #FF5A3D;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 28px;
+    padding-left: 28px;
+    margin-right: 8px;
+    font-weight: 600;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .card-description {
+    opacity: 0.8;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: white;
+    text-align: left;
+  }
+  
+  .card-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .contact-btn {
+    border-radius: 30px !important;
+    color: white !important;
+    border-color: #666 !important;
+  }
+  
+  .contact-btn:hover {
+    background-color: #222 !important;
+  }
+  
+  .card-title-sub{
+    margin: 0;
+    font-size: small;
+    color: #B2B2B2;
+  }
+  .image-div{
+    padding-right: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    .why-container{
+        padding: 30px;
+    
+    }
+   
+    .title{
+        font-size: x-large;
+    }
+    .card-title{
+        font-size: larger;
+       }
+    }

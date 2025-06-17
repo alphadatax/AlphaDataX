@@ -1,0 +1,107 @@
+.future-goals-container {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .header-image-card {
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .ss-title {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .sub-title {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .sustainability-card {
+   border: solid;
+   border-color: #3D3D3D66;
+    border-radius: 25px;
+    padding: 40px;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .sustainability-image {
+    
+      margin: 20px;
+    height: 200px;
+    border-radius: 25px;
+    width: 90%;
+    margin-top: 70px;
+  }
+  
+  .milestone-heading {
+    text-align: left;
+    font-weight: 600;
+    color: #999;
+  }
+  
+  .goal-box {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background-color: #111;
+    padding: 12px;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .goal-box .icon {
+    color: #ccc;
+    font-size: 20px;
+    margin-top: 2px;
+  }
+  
+  .goal-title {
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .goal-desc {
+    color: #aaa;
+    text-align: left;
+  }
+  .ss-card-img{
+    width: 100%;
+    border-radius: 25px;
+    height: 80%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .goal-box {
+      flex-direction: row;
+      gap: 10px;
+    }
+    .future-goals-container{
+        padding: 30px;
+    }
+    .sustainability-card{
+        padding: 5px;
+        padding-top: 15px;
+    }
+    .milestone-heading{
+        text-align: center;
+
+    }
+    .sustainability-image {
+        margin-top: 20px;
+    }
+
+  }
+  

@@ -1,0 +1,132 @@
+
+
+.hero-container {
+    position: relative;
+    height: 100vh;
+    background: url('/earth-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+}
+
+
+.hero-content{
+    padding: 100px;
+}
+.hero-caption{
+    padding-top: 18%;
+}
+h1 {
+    padding-top: 30%;
+    font-family: 'Hamlin';
+    font-size: 70px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 80px;
+    display: table;
+
+}
+@media (max-width:1500px){
+    .hero-container{
+        height: 100%;
+    }
+    .globe {
+        display: none;
+    }
+    .label {
+        display: none;
+    }
+
+    .count {
+        display: none;
+    }
+    .globe-grid{
+        display: none;
+    }
+
+}
+@media (max-width: 768px) {
+
+    /* Styles for smaller screens */
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-container {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    .hero-content{
+        padding: 0;
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .sub-text {
+        text-align: justify;
+
+    }
+
+    .globe {
+        display: none;
+    }
+
+    .label {
+        display: none;
+    }
+
+    .count {
+        display: none;
+    }
+
+}
+
+.sub-text {
+   
+    text-align: left;
+}
+
+.btn {
+    padding: 0.75rem 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: medium;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #34d1d1;
+    color: black;
+    float: left;
+    width: 100%;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: black;
+    float: left;
+    width: 100%;
+}
+
+.globe {
+    padding-top: 40%;
+    width: 429px;
+    opacity: 20%;
+}
+
+.count {
+    text-align: right;
+    font-size: larger;
+}
+
+.label {
+    text-align: right;
+    opacity: 20%;
+}

@@ -1,0 +1,112 @@
+
+.contact-container {
+    padding: 100px;
+  }
+  
+  .contact-wrapper {
+    max-width: 1200px;
+  }
+  
+  .left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    line-height: 50px;
+  }
+  .logo-x-img{
+    width: 40px;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .form-input .MuiOutlinedInput-root {
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .form-input input,
+  .form-input textarea {
+    color: #fff;
+  }
+  
+  .right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 2rem;
+    text-align: left;
+  }
+  
+  .info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .info-title {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #01fff4;
+    margin: 0;
+
+  }
+  
+  .info-text {
+    color: #cccccc;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .input-field {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+  }
+  
+  .input-field .MuiFilledInput-root {
+    background: transparent;
+    border-radius: 16px;
+    color: white;
+  }
+  
+  .input-field .MuiInputLabel-root {
+    color: white;
+  }
+  
+  .input-field .MuiFilledInput-input {
+    padding: 24px 14px 10px;
+  }
+  
+  .submit-btn {
+    align-self: flex-start;
+    background-color: white;
+    color: black;
+    border-radius: 999px;
+    padding: 8px 24px;
+    text-transform: none;
+    font-weight: bold;
+  }
+  .right-panel-dialogue{
+    opacity: 0.7;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    .right-panel {
+      padding-left: 0;
+      margin-top: 3rem;
+    }
+    .contact-container {
+        padding: 30px;
+    }
+  }
+  
