@@ -86,7 +86,7 @@ const CustomAppBar = ({ onFirstSectionClick, onSecondSectionClick, onThirdSectio
 
   return (
     <>
-      {window.innerWidth > 1500 ?
+      {window.innerWidth > 1270 ?
 
         <AppBar position="fixed" sx={{
           backgroundColor: 'rgba(255, 255, 255, 0)', // semi-transparent black
