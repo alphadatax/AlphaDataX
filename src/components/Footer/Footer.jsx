@@ -2,7 +2,8 @@
 import React from 'react';
 import './Footer.css';
 import { Box, Typography, Grid, IconButton } from '@mui/material';
-import { Instagram, YouTube, Twitter } from '@mui/icons-material';
+import { Instagram, Twitter, LinkedIn } from '@mui/icons-material';
+import XIcon from '@mui/icons-material/X';
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                     <img className='footer-logo' src="./logo.png" alt="" />
                 </Grid>
 
-                <Grid  size={{ xs: 6, sm: 3, md: 2 }}>
+                <Grid size={{ xs: 6, sm: 3, md: 2 }}>
                     <h4 className="footer-heading">Company</h4>
                     <ul>
                         <li>Our Mission</li>
@@ -22,7 +23,7 @@ const Footer = () => {
                     </ul>
                 </Grid>
 
-                <Grid  size={{ xs: 6, sm: 3, md: 3 }}>
+                <Grid size={{ xs: 6, sm: 3, md: 3 }}>
                     <h4 className="footer-heading">Our Solutions</h4>
                     <ul>
                         <li>Hyperscale AI Data Campuses</li>
@@ -32,7 +33,7 @@ const Footer = () => {
                     </ul>
                 </Grid>
 
-                <Grid  size={{ xs: 6, sm: 3, md: 2 }}>
+                <Grid size={{ xs: 6, sm: 3, md: 2 }}>
                     <h4 className="footer-heading">Resources</h4>
                     <ul>
                         <li>Blog</li>
@@ -40,10 +41,16 @@ const Footer = () => {
                     </ul>
                 </Grid>
 
-                <Grid  size={{ xs: 12, sm: 6, md: 2 }} className="social-icons">
-                    <IconButton><img className='social-media-logo' src="./instagram.png" alt="" /></IconButton>
-                    <IconButton><img className='social-media-logo' src="./twitter.png" alt="" /></IconButton>
-                    <IconButton><img className='social-media-logo' src="./youtube.png" alt="" /></IconButton>
+                <Grid size={{ xs: 12, sm: 6, md: 2 }} className="social-icons">
+                    <a href="https://www.instagram.com/alphadatax.adx?igsh=MXNwZzhsdnpxNjIxbA=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ><IconButton sx={{'&:focus': { outline: 'none', border: 'none' }}}><Instagram sx={{ color: 'white'}} /></IconButton></a>
+                    <a href="https://www.linkedin.com/company/alpha-data-x/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ><IconButton sx={{'&:focus': { outline: 'none', border: 'none' }}}><LinkedIn sx={{ color: 'white'}} /></IconButton></a>
+                    <IconButton sx={{'&:focus': { outline: 'none', border: 'none' }}}><XIcon sx={{ color: 'white','&:focus': { outline: 'none', border: 'none' } }} /></IconButton> 
                 </Grid>
             </Grid>
 

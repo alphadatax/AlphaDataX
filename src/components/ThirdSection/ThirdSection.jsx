@@ -59,7 +59,7 @@ const ThirdSection = () => {
                             {isPlaying && (
                                 <iframe
                                     className="video-iframe"
-                                    src={'./SampleVideo_1280x720_1mb.mp4'}
+                                    src={'./our-technology.mp4'}
                                     title="Video"
                                     frameBorder="0"
                                     allow="autoplay; encrypted-media"
