@@ -72,7 +72,7 @@ const ContactSection = () => {
                     </form>}
                 </Grid>
 
-                <Grid item size={{ xs: 12, md: 6 }} className="right-panel">
+                <Grid size={{ xs: 12, md: 6 }} className="right-panel">
                     <p className='right-panel-dialogue'>Join the innovators, governments, and visionaries powering the next era of AI infrastructure — sustainably, securely, and at scale.</p>
                     <div className="info-group">
                         <h5 className="info-title">ADDRESS</h5>

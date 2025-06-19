@@ -8,11 +8,11 @@ const Footer = () => {
     return (
         <Box className="footer">
             <Grid container className="footer-content" spacing={4}>
-                <Grid item size={{ xs: 12, sm: 6, md: 3 }}>
+                <Grid size={{ xs: 12, sm: 6, md: 3 }}>
                     <img className='footer-logo' src="./logo.png" alt="" />
                 </Grid>
 
-                <Grid item size={{ xs: 6, sm: 3, md: 2 }}>
+                <Grid  size={{ xs: 6, sm: 3, md: 2 }}>
                     <h4 className="footer-heading">Company</h4>
                     <ul>
                         <li>Our Mission</li>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </ul>
                 </Grid>
 
-                <Grid item size={{ xs: 6, sm: 3, md: 3 }}>
+                <Grid  size={{ xs: 6, sm: 3, md: 3 }}>
                     <h4 className="footer-heading">Our Solutions</h4>
                     <ul>
                         <li>Hyperscale AI Data Campuses</li>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </Grid>
 
-                <Grid item size={{ xs: 6, sm: 3, md: 2 }}>
+                <Grid  size={{ xs: 6, sm: 3, md: 2 }}>
                     <h4 className="footer-heading">Resources</h4>
                     <ul>
                         <li>Blog</li>
@@ -40,7 +40,7 @@ const Footer = () => {
                     </ul>
                 </Grid>
 
-                <Grid item size={{ xs: 12, sm: 6, md: 2 }} className="social-icons">
+                <Grid  size={{ xs: 12, sm: 6, md: 2 }} className="social-icons">
                     <IconButton><img className='social-media-logo' src="./instagram.png" alt="" /></IconButton>
                     <IconButton><img className='social-media-logo' src="./twitter.png" alt="" /></IconButton>
                     <IconButton><img className='social-media-logo' src="./youtube.png" alt="" /></IconButton>

@@ -30,13 +30,13 @@ const SixthSection = () => {
       </p>
 
       <Grid container spacing={2} className="sustainability-card">
-        <Grid item size={{xs:12,md:6}}>
+        <Grid  size={{xs:12,md:6}}>
         <Typography variant="subtitle2" className="milestone-heading">
             SUSTAINABILITY MILESTONES
           </Typography>
           <img className='sustainability-image' src="/Solar-Powered Data Center at Dusk.png" alt="" />
         </Grid>
-        <Grid item size={{xs:12,md:6}}>
+        <Grid  size={{xs:12,md:6}}>
           <Grid container spacing={2}>
             {goals.map((goal, index) => (
                <Grid container key={index}>

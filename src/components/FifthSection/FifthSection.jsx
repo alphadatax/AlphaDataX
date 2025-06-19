@@ -18,7 +18,7 @@ const FifthSection = ({onContactNowClick}) => {
     <Box className="why-container">
       <Grid container spacing={4} >
         {/* Left Side */}
-        <Grid item size={{xs:12,md:6}}>
+        <Grid size={{xs:12,md:6}}>
           <Grid container>
             <Grid className='image-div'size={{xs:12 ,md:12}} >
             <img src="/ADX-WHITE-TRANSPARENT 2.png" alt="X Icon" className="x-icon" />
@@ -34,7 +34,7 @@ const FifthSection = ({onContactNowClick}) => {
 
             <Grid container spacing={1} className="feature-chip-group">
               {features.map((feature, index) => (
-                <Grid item key={index}>
+                <Grid key={index}>
                   <Chip
                     label={feature}
                     className={`feature-chip ${index === 0 ? 'red-dot' : 'black-dot'}`}
@@ -46,7 +46,7 @@ const FifthSection = ({onContactNowClick}) => {
         </Grid>
 
         {/* Right Side */}
-        <Grid item size={{xs:12,md:6}}>
+        <Grid  size={{xs:12,md:6}}>
           <Paper className="info-card" elevation={4}>
             <div className="card-header">
               <Box className="card-number">1</Box>
