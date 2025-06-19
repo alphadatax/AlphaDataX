@@ -1,40 +1,53 @@
-
-
 .hero-container {
     position: relative;
     height: 100vh;
-    background: url('/earth-background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
 }
 
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
 
-.hero-content{
+.hero-content {
     padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 30vh;
+    z-index: 1;
 }
-.hero-caption{
+
+.hero-caption {
     padding-top: 18%;
 }
+
 h1 {
     padding-top: 30%;
     font-family: 'Hamlin';
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 100;
     text-align: left;
     line-height: 80px;
     display: table;
 
 }
-@media (max-width:1500px){
-    .hero-container{
+
+@media (max-width:1500px) {
+    .hero-container {
         height: 100%;
     }
+
     .globe {
         display: none;
     }
+
     .label {
         display: none;
     }
@@ -42,11 +55,13 @@ h1 {
     .count {
         display: none;
     }
-    .globe-grid{
+
+    .globe-grid {
         display: none;
     }
 
 }
+
 @media (max-width: 768px) {
 
     /* Styles for smaller screens */
@@ -61,7 +76,8 @@ h1 {
         justify-content: center;
         height: 100%;
     }
-    .hero-content{
+
+    .hero-content {
         padding: 0;
         padding-top: 30%;
         padding-bottom: 30%;
@@ -87,7 +103,7 @@ h1 {
 }
 
 .sub-text {
-   
+
     text-align: left;
 }
 

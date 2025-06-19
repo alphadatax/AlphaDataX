@@ -2,12 +2,16 @@ import React from 'react';
 import './FirstSection.css';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import videobg from  '/globe-bg-video.mp4';
 import bg from '/earth-background.png'; // or correct image path
 
 const FirstSection = () => {
   
   return (
     <div className="hero-container">
+      <video className='video-bg' autoPlay loop muted playsInline id="myVideo">
+          <source src={videobg} type="video/mp4"></source>
+      </video>
       <div className="hero-content">
       <Box sx={{ flexGrow: 1 }}>
       <Grid container columns={12}>
@@ -24,9 +28,9 @@ const FirstSection = () => {
           <Grid size={{xs:12, sm:12,md:12,lg:3}}>
           <button className="btn btn-primary">Request a Demo</button>
           </Grid>
-          <Grid size={{xs:12, sm:12,md:12,lg:3}}>
+          {/* <Grid size={{xs:12, sm:12,md:12,lg:3}}>
           <button className="btn btn-secondary">View Our Pitch Deck</button>
-          </Grid>
+          </Grid> */}
           </Grid>
    
         </div>

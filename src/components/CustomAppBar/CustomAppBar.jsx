@@ -133,6 +133,7 @@ const CustomAppBar = ({ onFirstSectionClick, onSecondSectionClick, onThirdSectio
                 '&:hover': {
                   backgroundColor: '#f5f5f5',
                 },
+                '&:focus': { outline: 'none', border: 'none' }
               }}
               onClick={onContactNowClick}
             >
