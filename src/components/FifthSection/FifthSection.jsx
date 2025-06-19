@@ -11,7 +11,7 @@ const features = [
   "MISSION-DRIVEN OPERATIONS",
 ];
 
-const FifthSection = () => {
+const FifthSection = ({onContactNowClick}) => {
   return (
     <div className='outer-bg'>
         <div className="glow" />
@@ -62,7 +62,7 @@ const FifthSection = () => {
 
             <img src="/Futuristic Desert Tech Landscape at Sunrise.png" alt="Data Center" className="card-image" />
 
-            <Button variant="outlined" fullWidth  className="contact-btn">
+            <Button variant="outlined" sx={{'&:focus': { outline: 'none', border: 'solid' }}} fullWidth  className="contact-btn" onClick={onContactNowClick}>
               Contact Us
             </Button>
           </Paper>

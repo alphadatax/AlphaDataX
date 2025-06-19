@@ -1,6 +1,4 @@
 import { useRef } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import "./assets/fonts/hamlin/stylesheet.css"
 import CustomAppBar from './components/CustomAppBar/CustomAppBar/';
 import FirstSection from './components/FirstSection/FirstSection';
@@ -54,7 +52,7 @@ function App() {
       <FourthSection />
       </div>
       <div ref={whyAplhaRef}>
-      <FifthSection />
+      <FifthSection onContactNowClick={() => scrollTo(contactRef)}/>
       </div>
       <div ref={futureRef}>
       <SixthSection />
