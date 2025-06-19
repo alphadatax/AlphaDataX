@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
-import { Grid, Box, Typography, TextField, Button,Grow,Paper } from '@mui/material';
+import { Grid, Box, Typography, TextField, Button, Grow, Paper } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import './ContactSection.css';
 
 const ContactSection = () => {
-    const[isSent,setIsSent] = useState(false);
+    const [isSent, setIsSent] = useState(false);
+    const [value, setValue] = useState('');
+
+    const handleChange = (e) => {
+        const newValue = e.target.value;
+        // Allow only digits (0-9)
+        if (/^\d*$/.test(newValue)) {
+            setValue(newValue);
+        }
+    };
     return (
         <Box className="contact-container">
             <Grid container spacing={4} className="contact-wrapper">
@@ -12,64 +21,66 @@ const ContactSection = () => {
                     <h1 className="main-heading">
                         LET’S BUILD THE FUTURE TOGETHER
                     </h1>
-                    {isSent?
-                    <Grow in={true} timeout={500}>
-                        <Paper
-                            elevation={3}
-                            sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 2,
-                                padding: 2,
-                                backgroundColor: '#e6ffee',
-                                border: '1px solid #b2f0d2',
-                                borderRadius: '12px',
-                                width: 'fit-content',
-                                margin: '100px auto',
-                            }}
-                        >
-                            <CheckCircleIcon sx={{ color: '#2e7d32', fontSize: 40 }} />
-                            <Typography sx={{ color: '#2e7d32', fontWeight: 600 }}>
-                                Message sent successfully!
-                            </Typography>
-                        </Paper>
-                    </Grow>:
-                    <form className="form-container">
-                        <TextField
-                            label="Name"
-                            placeholder="Your Name"
-                            variant="filled"
-                            fullWidth
-                            InputProps={{ disableUnderline: true }}
-                            className="input-field"
-                        />
-                        <TextField
-                            label="Email"
-                            variant="filled"
-                            fullWidth
-                            InputProps={{ disableUnderline: true }}
-                            className="input-field"
-                        />
-                        <TextField
-                            label="Phone"
-                            variant="filled"
-                            fullWidth
-                            InputProps={{ disableUnderline: true }}
-                            className="input-field"
-                        />
-                        <TextField
-                            label="Message"
-                            variant="filled"
-                            fullWidth
-                            multiline
-                            rows={4}
-                            InputProps={{ disableUnderline: true }}
-                            className="input-field"
-                        />
-                        <Button className="submit-btn" variant="contained" style={{ backgroundColor: 'white', color: 'black', borderRadius: '999px', padding: "8px 24px" }} onClick={()=>setIsSent(true)}>
-                            Send Message
-                        </Button>
-                    </form>}
+                    {isSent ?
+                        <Grow in={true} timeout={500}>
+                            <Paper
+                                elevation={3}
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 2,
+                                    padding: 2,
+                                    backgroundColor: '#e6ffee',
+                                    border: '1px solid #b2f0d2',
+                                    borderRadius: '12px',
+                                    width: 'fit-content',
+                                    margin: '100px auto',
+                                }}
+                            >
+                                <CheckCircleIcon sx={{ color: '#2e7d32', fontSize: 40 }} />
+                                <Typography sx={{ color: '#2e7d32', fontWeight: 600 }}>
+                                    Message sent successfully!
+                                </Typography>
+                            </Paper>
+                        </Grow> :
+                        <form className="form-container">
+                            <TextField
+                                label="Name"
+                                placeholder="Your Name"
+                                variant="filled"
+                                fullWidth
+                                InputProps={{ disableUnderline: true }}
+                                className="input-field"
+                            />
+                            <TextField
+                                label="Email"
+                                variant="filled"
+                                fullWidth
+                                InputProps={{ disableUnderline: true }}
+                                className="input-field"
+                            />
+                            <TextField
+                                label="Phone"
+                                variant="filled"
+                                fullWidth
+                                value={value}
+                                InputProps={{ disableUnderline: true }}
+                                onChange={handleChange}
+                                className="input-field"
+                            />
+                            <TextField
+                                label="Message"
+                                variant="filled"
+                                fullWidth
+                                multiline
+                                rows={4}
+                                InputProps={{ disableUnderline: true }}
+                                className="input-field"
+                            />
+                            <Button className="submit-btn" variant="contained" style={{ backgroundColor: 'white', color: 'black', borderRadius: '999px', padding: "8px 24px" }} onClick={() => setIsSent(true)}>
+                                Send Message
+                            </Button>
+                        </form>}
                 </Grid>
 
                 <Grid size={{ xs: 12, md: 6 }} className="right-panel">
