@@ -17,8 +17,8 @@ const FirstSection = () => {
       <Grid container columns={12}>
         <Grid size={{xs:12,md:9}}>
         <h1 className="hero-caption">
-          POWERING THE FUTURE  <br />
-          <span>AI SUSTAINABLY</span>
+          POWERING THE FUTURE <br />
+          <span>OF AI SUSTAINABLY</span>
         </h1>
         <p className='sub-text'>
           Welcome to Alpha Data X – the infrastructure engine behind sovereign AI, clean compute, and exponential innovation.
@@ -26,7 +26,7 @@ const FirstSection = () => {
         <div className="buttons">
         <Grid container={'true'} sx={12} spacing={1}>
           <Grid size={{xs:12, sm:12,md:12,lg:3}}>
-          
+           <button className="btn btn-primary">Request a Demo</button>
           </Grid>
           {/* <Grid size={{xs:12, sm:12,md:12,lg:3}}>
           <button className="btn btn-secondary">View Our Pitch Deck</button>
