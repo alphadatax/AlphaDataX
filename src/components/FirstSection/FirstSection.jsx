@@ -17,7 +17,7 @@ const FirstSection = () => {
       <Grid container columns={12}>
         <Grid size={{xs:12,md:9}}>
         <h1 className="hero-caption">
-          POWERING SUSTAINABLE AI <br />
+          POWERING THE AI FUTURE SUSTAINABLY <br />
           <span>AT THE EDGE</span>
         </h1>
         <p className='sub-text'>
