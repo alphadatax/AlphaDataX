@@ -17,8 +17,8 @@ const FirstSection = () => {
       <Grid container columns={12}>
         <Grid size={{xs:12,md:9}}>
         <h1 className="hero-caption">
-          POWERING THE AI FUTURE SUSTAINABLY <br />
-          <span>AT THE EDGE</span>
+          POWERING THE FUTURE  <br />
+          <span>AI SUSTAINABLY</span>
         </h1>
         <p className='sub-text'>
           Welcome to Alpha Data X – the infrastructure engine behind sovereign AI, clean compute, and exponential innovation.
