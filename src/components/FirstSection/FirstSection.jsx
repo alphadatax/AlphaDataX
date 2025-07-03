@@ -26,7 +26,7 @@ const FirstSection = () => {
         <div className="buttons">
         <Grid container={'true'} sx={12} spacing={1}>
           <Grid size={{xs:12, sm:12,md:12,lg:3}}>
-          <button className="btn btn-primary">Request a Demo</button>
+          
           </Grid>
           {/* <Grid size={{xs:12, sm:12,md:12,lg:3}}>
           <button className="btn btn-secondary">View Our Pitch Deck</button>
